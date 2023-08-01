@@ -1,5 +1,4 @@
 // Load Testing with K6
-
 import http from 'k6/http';
 
 
@@ -18,7 +17,7 @@ export const options = {
 
 
 export default function () {
-    const url = process.env.URL;
+    const url = 'http://localhost:3000';//testing url
     const payload = JSON.stringify({
         name: "hello",
         age: 13
